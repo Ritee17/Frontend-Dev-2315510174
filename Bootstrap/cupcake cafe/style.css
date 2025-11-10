@@ -1,0 +1,125 @@
+/* === FONT & BODY STYLING === */
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #F2DEC4;
+}
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  color: #653910;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Pacifico', cursive;
+  color: #653910;
+}
+
+/* === NAVBAR === */
+
+/* FIX #1: I added the background-color here and added the new box-shadow.
+  This rule is for the navbar container itself. 
+*/
+.navbar {
+  background-color: #EAC89F;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* <-- NEW realistic shadow */
+}
+
+/* FIX #2: I un-nested this rule. It must be separate.
+*/
+.navbar-brand {
+  font-family: 'Pacifico', cursive;
+  color: #653910;
+  font-size: 2rem;
+}
+
+/* === NEW: Makes the brand name 'pop' on hover === */
+.navbar-brand:hover {
+  transform: scale(1.03);
+  transition: all 0.2s ease-in-out;
+}
+
+/* === NEW: Styles for attractive nav links === */
+.navbar-nav .nav-link {
+  font-weight: bold;
+  color: #855b32; /* Darker, richer brown */
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #653910;
+  transform: scale(1.1); /* 'Pop' effect on hover */
+}
+
+/* Makes sure the 'Home' link stays dark */
+.navbar-nav .nav-link.active {
+  color: #653910;
+  font-weight: bold;
+}
+
+.dropdown-menu {
+  background-color: bisque;
+}
+
+/* === WELCOME SECTION === */
+.welcome-section {
+  text-align: center;
+  padding: 40px 15px;
+}
+
+.welcome-section .lead {
+  color: #653910;
+}
+
+/* === FEATURED CARDS (Suggestion #2) === */
+.card {
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card-title {
+  color: #653910;
+  font-family: 'Pacifico', cursive;
+  font-size: 1.5rem;
+}
+
+/* A custom button style */
+.btn-custom {
+  background-color: #EAC89F;
+  color: #653910;
+  font-weight: bold;
+}
+
+.btn-custom:hover {
+  background-color: #e0b78c;
+  color: #653910;
+}
+
+/* === FOOTER (Suggestion #3) === */
+footer {
+  background-color: #EAC89F;
+  color: #653910;
+  padding: 30px 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+footer a {
+  color: #653910;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: #000;
+}
+
+footer .social-icons a {
+  margin-left: 15px;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+/* FIX #3: I removed the extra '}' that was here.
+*/
